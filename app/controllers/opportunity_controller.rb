@@ -6,6 +6,7 @@ class OpportunityController < ApplicationController
     js[:objective] = parsed["objective"]
     js[:organizations] = parsed["organizations"]
     js[:remote] = parsed["place"]["remote"]
+    js[:created] = parsed["created"]
     js[:location] = parsed["place"]["location"]
     js[:currency] = parsed["compensation"]["currency"]
     js[:minAmount] = parsed["compensation"]["minAmount"]
